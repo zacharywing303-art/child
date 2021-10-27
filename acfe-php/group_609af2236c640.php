@@ -670,6 +670,28 @@ acf_add_local_field_group(array(
 							'display' => 'block',
 							'sub_fields' => array(
 								array(
+									'key' => 'field_6178d48a47ee7',
+									'label' => 'List Type',
+									'name' => 'list_type',
+									'type' => 'button_group',
+									'instructions' => '',
+									'required' => 0,
+									'conditional_logic' => 0,
+									'wrapper' => array(
+										'width' => '',
+										'class' => '',
+										'id' => '',
+									),
+									'choices' => array(
+										'ul' => 'Unordered List',
+										'ol' => 'Ordered List',
+									),
+									'allow_null' => 0,
+									'default_value' => 'ol',
+									'layout' => 'horizontal',
+									'return_format' => 'value',
+								),
+								array(
 									'key' => 'field_6171c162b3785',
 									'label' => 'List Items',
 									'name' => 'list_items',
@@ -792,15 +814,14 @@ acf_add_local_field_group(array(
 									'required' => 0,
 									'conditional_logic' => 0,
 									'wrapper' => array(
-										'width' => '',
+										'width' => '75',
 										'class' => '',
 										'id' => '',
 									),
 									'uploader' => '',
 									'acfe_thumbnail' => 0,
 									'return_format' => 'array',
-									'preview_size' => 'medium',
-									'library' => 'all',
+									'preview_size' => 'full',
 									'min_width' => '',
 									'min_height' => '',
 									'min_size' => '',
@@ -808,6 +829,22 @@ acf_add_local_field_group(array(
 									'max_height' => '',
 									'max_size' => '',
 									'mime_types' => '',
+									'library' => 'all',
+								),
+								array(
+									'key' => 'field_6178d4b647ee8',
+									'label' => 'Links To',
+									'name' => 'links_to',
+									'type' => 'link',
+									'instructions' => 'The title of the link is used as the accessibility title.',
+									'required' => 0,
+									'conditional_logic' => 0,
+									'wrapper' => array(
+										'width' => '25',
+										'class' => '',
+										'id' => '',
+									),
+									'return_format' => 'array',
 								),
 							),
 							'min' => '',
@@ -1586,7 +1623,7 @@ acf_add_local_field_group(array(
 						'class' => '',
 						'id' => '',
 					),
-					'message' => '',
+					'message' => 'If you hover over the number to the left, an icon should appear that allows you to expand this layout item in order to edit content.',
 					'new_lines' => 'wpautop',
 					'esc_html' => 0,
 				),
@@ -1621,7 +1658,7 @@ acf_add_local_field_group(array(
 	'acfe_categories' => array(
 		'layout' => 'Layout',
 	),
-	'modified' => 1634932994,
+	'modified' => 1635308903,
 ));
 
 endif;
